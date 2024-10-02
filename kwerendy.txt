@@ -1,0 +1,4 @@
+1.SELECT * FROM `towary` WHERE 'promocja' = 1;
+2.SELECT cena FROM `towary` WHERE 'id' = 10;
+3.SELECT DISTINCT dostawcy.id, dostawcy_nazwa as liczba_towarów FROM `dostawcy` LEFT JOIN towary ON towary.idDostawcy = dostawcy.id;
+4.ALTER TABLE `dostawcy` ADD `Informacje` TEXT NOT NULL AFTER `adres`;
